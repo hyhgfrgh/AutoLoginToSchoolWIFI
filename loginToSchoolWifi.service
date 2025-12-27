@@ -1,0 +1,15 @@
+[Unit]
+Description=Login to school Wifi
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=idle
+ExecStart=/usr/local/bin/loginWifi.sh
+Restart=on-failure
+RestartSec=5s
+
+
+[Install]
+WantedBy=multi-user.target
+
