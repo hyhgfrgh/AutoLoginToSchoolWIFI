@@ -1,20 +1,18 @@
 # AutoLoginToSchoolWIFI
 
-
-
 设计的是在每使用NetworkManager连i-wxxy的时候执行一次登陆请求，然后是在进去桌面系统的时候执行一次登陆请求
 
 hyprland桌面就把`hypr-exec.sh` 加到`exec-once`里
 
 kde,gnome桌面就看`install.sh` 的最后注释的一部分，通过desktop开机自启
 
-
-
 利用NetworkManager 的联网事件写的后台自动登陆校园网上网的
 
 在10.1.99.100连接校园网时F12我们可以发现会发出http请求,我们观察选择不同运营商时的请求，便可以提取出来请求中都有哪些需要我们填的变量
 
 然后我们写个脚本（进行http请求）利用NetworkManager 的联网事件就可以达到自动登陆校园网的功能啦
+
+                   ![](images/show.png)
 
 | 项目             | 无锡学院    | 中国移动      | 中国联通        | 中国电信         |
 | -------------- | ------- | --------- | ----------- | ------------ |
