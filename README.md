@@ -1,5 +1,6 @@
 # AutoLoginToSchoolWIFI
 ~~（对shell脚本chmod +x 因该不用我说吧）~~
+
 设计的是在每使用NetworkManager连i-wxxy的时候执行一次登陆请求，然后是在进去桌面系统的时候执行一次登陆请求
 
 hyprland桌面就把`hypr-exec.sh` 加到`exec-once`里
