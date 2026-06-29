@@ -97,7 +97,7 @@ fi
             LOGIN_SUCCESS=1
             break
         fi
-        # sleep 1
+        sleep 1
     done
 
     echo LOGIN_SUCCESS \${LOGIN_SUCCESS} >> /var/log/wxxy-script.log 2>&1
